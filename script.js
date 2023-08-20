@@ -1,6 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-
+//function to add task
 function addTask() {
     if(inputBox.value === ''){
         alert("You Must write something");
@@ -19,19 +19,21 @@ function addTask() {
 }
 
 listContainer.addEventListener("click", function(e){
+//function to mark task / checked and unchecked task
     if(e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();
+//function to remove task
     } else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
         saveData();
     } 
 }, false);
-
+//function to save data to local storage
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
-
+//function to restore data from local storage to browser
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
