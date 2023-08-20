@@ -3,7 +3,7 @@ const listContainer = document.getElementById("list-container");
 //function to add task
 function addTask() {
     if(inputBox.value === ''){
-        alert("You Must write something");
+        alert("Task cannot be empity!!!");
     }
     else {
         let li = document.createElement("li");

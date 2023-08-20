@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background:  linear-gradient(135deg, #6cffbd, #18705b);
+    background:  linear-gradient(135deg, #512B81, #4477CE, #35155D);
     padding: 10px;
 }
 .todo {
@@ -21,13 +21,13 @@
 }
 
 .todo h2{
-    color: black;
+    color:rgb(81, 43, 129);
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 .row{
-    background: rgb(240, 180, 69,0.8);
+    background:rgb(81, 43, 129, 0.7);
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -35,8 +35,8 @@
 }
 input {
     flex: 1;
-    border: none;
-    outline: none;
+    border: 1px;
+    outline: 1px;
     background: transparent ;
     padding: 16px 50px;
     font-weight: 14px;
@@ -47,7 +47,7 @@ button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background-color: rgb(240, 180, 69);
+    background-color:rgb(81, 43, 129);
     color: white;
     font-size: 16px;
     cursor: pointer;
